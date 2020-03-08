@@ -1,0 +1,211 @@
+@keyframes logoPopUp{
+    0%{
+        opacity: 0;
+        transform: translateY(300px) scale(6);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(300px) scale(6);
+    }
+    100%{
+        transform: translateY(0px) scale(1);
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+html{
+    scroll-behavior: smooth;
+}
+#content-grid{
+    margin: 0 5%;
+    display: flex;
+    padding: 5px;
+}
+
+.left-grid{
+    flex-grow: 3;
+    margin: 10px;
+}
+.right-grid{
+    flex-grow: 2;
+    margin: 10px;
+}
+.top-banner{
+    display: grid;
+    grid-auto-flow: column;
+    background: #5c5c80;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 85px 1fr 1fr 1fr 1fr;
+    
+}
+.top-banner #microphone{
+    max-width: 75px;
+    max-height: 75px;
+    border-radius: 50%;
+    justify-self: center;
+    animation: logoPopUp 2s;
+}
+.challah-text{
+    color: #ffffff;
+    font-stretch: narrower;
+    opacity: 0.7;
+    font-size: 4.5em;
+}
+#challah-text-left{
+    justify-self: right
+}
+#challah-text-right{
+    justify-self: left;
+}
+.content{
+    width: 100%;
+    padding-bottom: 15%;
+    background: #515171;
+}
+
+.top-text{
+    color: white;
+    font-size: 1.4em;
+    letter-spacing: 0.05em;
+}
+.top-text a{
+    color: white;
+    text-decoration: none;
+}
+
+.top-text:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#dropdown-menu{
+    position: absolute;
+    background: #5353dc;
+    width: 149.5px;
+
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+.link{
+    padding: 10px 0;
+
+    text-align: center;
+}
+
+.link a{
+    color: white;
+    size: 1.2em;
+    text-decoration: none;
+}
+.about-us-grid{
+    margin: 0 5%;
+    display: flex;
+    padding: 5px;
+}
+
+.about-us-left{
+    flex-grow: 2;
+}
+
+.about-us-right{
+    flex-grow: 1;
+}
+
+.about-us{
+    background: #6d8f90;
+}
+
+.highlights{
+    background: #337373;
+}
+
+.highlights-container{
+    padding: 2% 5%;
+    display: flex;
+    position: relative;
+}
+.highlight{
+    padding: 5px;
+}
+.name{
+    position: absolute;
+    transform: translateY(20px);
+}
+
+
+.highlights-container .name{    
+    flex-grow: 1;
+}
+
+.contact-us-grid{
+    display: flex;
+    margin: 5px;
+}
+.spacer{
+    flex-grow: 1;
+}
+.contact-us-bobby{
+    display: flex;
+    flex-direction: column;
+}
+.contact-us-bobby img{
+    width: 450px;
+    height: 450px;
+}
+
+.contact-us-jack{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.jack-insta{
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+}
+
+.contact-us{
+    background: #529f98;
+    padding-bottom: 3%;
+}
+
+.contact-us-grid{
+    margin: 0 5%;
+}
+.bobby-contact-images{
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    background: url(./Images/Instagram.png);
+}
+
+.bobby-contact-images:hover{
+    transition: 0.3s;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    background: url(./Images/instagram-colored.png);
+}
+.jack-contact-images{
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    background: url(./Images/Instagram.png);
+}
+
+.jack-contact-images:hover{
+    transition: 0.3s;
+    background: url(./Images/instagram-colored.png);
+}
